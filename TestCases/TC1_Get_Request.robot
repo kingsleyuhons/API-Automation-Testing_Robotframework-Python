@@ -4,10 +4,10 @@ Library   RequestsLibrary
 
 *** Variables ***
 ${base_url}   https://restful-booker.herokuapp.com
-${page}  2
+${page}  199
 
 *** Test Cases ***
-Get_weatherInfo
+Get_bookerInfo
     Create Session    Mysession    ${base_url}
     ${response}  get request    Mysession    /booking/${page}
     Log To Console    ${response.status_code}
